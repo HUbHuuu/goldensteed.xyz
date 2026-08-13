@@ -26,11 +26,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -204,13 +199,6 @@ h3 {
     transform: rotate(1deg);
 }
 
-.hero-media img,
-.visual-card img,
-.capability-grid img {
-    width: 100%;
-    border-radius: 6px;
-}
-
 .metrics {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -285,10 +273,72 @@ h3 {
     overflow: hidden;
 }
 
-.capability-grid img {
-    height: 210px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
+.capability-grid h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.capability-grid p {
+    margin-bottom: 24px;
+}
+
+.brand-panel {
+    min-height: 420px;
+    display: grid;
+    align-content: center;
+    gap: 34px;
+    padding: 42px;
+    background:
+        linear-gradient(135deg, rgba(185, 111, 43, 0.18), rgba(22, 62, 92, 0.08)),
+        var(--white);
+}
+
+.giant-mark {
+    color: var(--gold);
+    font-size: clamp(78px, 14vw, 150px);
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.value-grid,
+.market-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.value-grid span,
+.market-list span {
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.74);
+    color: var(--muted);
+    font-weight: 800;
+}
+
+.process-card,
+.market-card {
+    padding: 34px;
+}
+
+.process-card ol {
+    margin: 22px 0 0;
+    padding-left: 22px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.capability-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    margin: 22px 22px 18px;
+    border-radius: 6px;
+    color: var(--white);
+    background: var(--green);
+    font-weight: 900;
 }
 
 .capability-grid h3,
@@ -296,13 +346,9 @@ h3 {
     padding: 0 22px;
 }
 
-.capability-grid h3 {
-    margin-top: 22px;
-    margin-bottom: 10px;
-}
-
-.capability-grid p {
-    margin-bottom: 24px;
+.market-card p {
+    color: var(--muted);
+    line-height: 1.7;
 }
 
 .tag-list {
