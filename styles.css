@@ -270,6 +270,15 @@ h3 {
     padding: 10px;
 }
 
+.customer-showcase {
+    padding: 92px 5vw;
+    background: var(--paper);
+}
+
+.wide-visual {
+    max-width: 1120px;
+}
+
 .section-band {
     padding: 92px 5vw;
     background: var(--soft);
@@ -298,6 +307,14 @@ h3 {
     background: var(--paper);
     border-radius: 8px 8px 0 0;
     overflow: hidden;
+}
+
+.visual-card .slide-preview {
+    border-radius: 6px;
+}
+
+.visual-card .slide-preview img {
+    border-radius: 6px;
 }
 
 .slide-preview:hover img,
