@@ -82,32 +82,44 @@
         </div>
         <div class="capability-grid">
             <article>
-                <img src="assets/slides/stamping-welding.png" alt="Golden Steed stamping and welding equipment">
+                <button class="slide-preview" type="button" aria-label="View full Stamping and Welding slide">
+                    <img src="assets/slides/stamping-welding.png" alt="Golden Steed stamping and welding equipment">
+                </button>
                 <h3>Stamping &amp; Welding</h3>
                 <p>315T and 400T stamping capacity, blanking, drawing, flattening, MIG, MAG and TIG welding for structural components.</p>
             </article>
             <article>
-                <img src="assets/slides/cnc.png" alt="Golden Steed CNC machining and turning equipment">
+                <button class="slide-preview" type="button" aria-label="View full CNC Machining and Turning slide">
+                    <img src="assets/slides/cnc.png" alt="Golden Steed CNC machining and turning equipment">
+                </button>
                 <h3>CNC Machining &amp; Turning</h3>
                 <p>Machining centers, CNC turning and precision cutting support copper, aluminum and custom mechanical components.</p>
             </article>
             <article>
-                <img src="assets/slides/busbar.png" alt="Golden Steed copper busbar manufacturing">
+                <button class="slide-preview" type="button" aria-label="View full Copper Busbar slide">
+                    <img src="assets/slides/busbar.png" alt="Golden Steed copper busbar manufacturing">
+                </button>
                 <h3>Copper Busbar</h3>
                 <p>Three-dimensional copper busbar processing with automated positioning, bending and supporting production equipment.</p>
             </article>
             <article>
-                <img src="assets/slides/harness.png" alt="Golden Steed electrical harness assembly">
+                <button class="slide-preview" type="button" aria-label="View full Electrical Harness Assembly slide">
+                    <img src="assets/slides/harness.png" alt="Golden Steed electrical harness assembly">
+                </button>
                 <h3>Electrical Harness Assembly</h3>
                 <p>Harness preparation, welding, crimping and testing for VCB mechanisms and electrical control assemblies.</p>
             </article>
             <article>
-                <img src="assets/slides/cabinet.png" alt="Golden Steed cabinet assembly and testing">
+                <button class="slide-preview" type="button" aria-label="View full Cabinet Assembly and Testing slide">
+                    <img src="assets/slides/cabinet.png" alt="Golden Steed cabinet assembly and testing">
+                </button>
                 <h3>Cabinet Assembly &amp; Testing</h3>
                 <p>OEM cabinet assembly for high-voltage, medium-voltage, control, intelligent, inverter and customized systems.</p>
             </article>
             <article>
-                <img src="assets/slides/measurement.png" alt="Golden Steed measuring equipment">
+                <button class="slide-preview" type="button" aria-label="View full Measuring Equipment slide">
+                    <img src="assets/slides/measurement.png" alt="Golden Steed measuring equipment">
+                </button>
                 <h3>Measuring Equipment</h3>
                 <p>Automatic image measuring, profile and surface roughness equipment support consistent inspection and quality control.</p>
             </article>
@@ -170,6 +182,13 @@
         </div>
     </section>
 </main>
+
+<dialog id="imageDialog" class="image-dialog" aria-label="Full slide preview">
+    <div class="image-dialog-panel">
+        <button class="dialog-close" type="button" aria-label="Close full slide preview">×</button>
+        <img src="" alt="">
+    </div>
+</dialog>
 
 <footer class="site-footer">
     <span>Golden Steed Technology</span>
