@@ -188,14 +188,49 @@
             <p class="eyebrow">Contact</p>
             <h2>Send drawings, specifications or sourcing requirements.</h2>
             <p>Golden Steed can review your drawings, process requirements and project schedule, then recommend the right manufacturing route or assembly support.</p>
+            <div class="contact-card">
+                <h3>Percy Wu</h3>
+                <p>Legal Representative / Contact</p>
+                <a href="tel:+8613585203146">+86 13585203146</a>
+                <a href="mailto:szqj@golden-steed.com.cn">szqj@golden-steed.com.cn</a>
+                <p class="address">West Side, 3rd Floor, Building 16, No.99 Changping Road, Huangdai Town, Xiangcheng District, Suzhou City</p>
+            </div>
         </div>
-        <div class="contact-card">
-            <h3>Percy Wu</h3>
-            <p>Legal Representative / Contact</p>
-            <a href="tel:+8613585203146">+86 13585203146</a>
-            <a href="mailto:szqj@golden-steed.com.cn">szqj@golden-steed.com.cn</a>
-            <p class="address">West Side, 3rd Floor, Building 16, No.99 Changping Road, Huangdai Town, Xiangcheng District, Suzhou City</p>
-        </div>
+        <form id="inquiryForm" class="inquiry-form">
+            <h3>Leave a Message</h3>
+            <div class="form-grid">
+                <label>
+                    <span>Name *</span>
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>
+                    <span>Email *</span>
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label>
+                    <span>Phone / WhatsApp</span>
+                    <input type="tel" name="phone" autocomplete="tel">
+                </label>
+                <label>
+                    <span>Company</span>
+                    <input type="text" name="company" autocomplete="organization">
+                </label>
+                <label>
+                    <span>Country / Region</span>
+                    <input type="text" name="country" autocomplete="country-name">
+                </label>
+                <label>
+                    <span>Product Interest</span>
+                    <input type="text" name="interest" placeholder="CNC, busbar, harness, cabinet...">
+                </label>
+            </div>
+            <label class="message-field">
+                <span>Message *</span>
+                <textarea name="message" rows="6" required placeholder="Tell us about drawings, materials, quantity, schedule or process requirements."></textarea>
+            </label>
+            <button class="button primary" type="submit">Submit Inquiry</button>
+            <p class="form-note" id="formNote">Submitting will open your email app with the inquiry prepared.</p>
+        </form>
     </section>
 </main>
 

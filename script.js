@@ -35,3 +35,39 @@ imageDialog.addEventListener("click", (event) => {
         imageDialog.close();
     }
 });
+
+const inquiryForm = document.querySelector("#inquiryForm");
+const formNote = document.querySelector("#formNote");
+
+inquiryForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!inquiryForm.reportValidity()) {
+        return;
+    }
+
+    const data = new FormData(inquiryForm);
+    const value = (name) => String(data.get(name) || "").trim();
+    const subjectName = value("company") || value("name");
+    const subject = `Golden Steed website inquiry - ${subjectName}`;
+    const body = [
+        "New inquiry from goldensteed.xyz",
+        "",
+        `Name: ${value("name")}`,
+        `Email: ${value("email")}`,
+        `Phone / WhatsApp: ${value("phone") || "-"}`,
+        `Company: ${value("company") || "-"}`,
+        `Country / Region: ${value("country") || "-"}`,
+        `Product Interest: ${value("interest") || "-"}`,
+        "",
+        "Message:",
+        value("message"),
+    ].join("\n");
+
+    const mailto = new URL("mailto:szqj@golden-steed.com.cn");
+    mailto.searchParams.set("subject", subject);
+    mailto.searchParams.set("body", body);
+    window.location.href = mailto.toString();
+
+    formNote.textContent = "Your email app should open with the inquiry prepared. Please send the email to complete your message.";
+});
