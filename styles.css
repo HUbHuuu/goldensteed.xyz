@@ -508,19 +508,6 @@ h3 {
     line-height: 1.5;
 }
 
-.form-response-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.form-response-actions .button {
-    min-height: 40px;
-    padding: 0 16px;
-    border: 1px solid var(--line);
-    background: var(--white);
-}
-
 .site-footer {
     display: flex;
     justify-content: space-between;
