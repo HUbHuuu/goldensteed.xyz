@@ -71,9 +71,9 @@ inquiryForm.addEventListener("submit", async (event) => {
         }
 
         inquiryForm.reset();
-        formResponseText.textContent = "Thank you. Your inquiry has been submitted successfully.";
+        formResponseText.textContent = "Thank you. Your inquiry has been submitted successfully. Our team will reply within 24 hours. Please check your email inbox and spam folder.";
         formResponse.hidden = false;
-        formNote.textContent = "Our team will review your message and contact you soon.";
+        formNote.textContent = "Please make sure your email address is correct so we can reach you.";
         formResponse.scrollIntoView({ behavior: "smooth", block: "nearest" });
     } catch {
         formResponseText.textContent = "We could not submit your inquiry. Please try again in a moment or contact szqj@golden-steed.com.cn.";
